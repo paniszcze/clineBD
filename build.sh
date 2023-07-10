@@ -7,4 +7,4 @@ LIBS="`pkg-config --libs raylib`"
 
 mkdir -p ./build
 
-clang $CFLAGS -o ./build/clineBD clineBD.c $LIBS
+clang $CFLAGS -o ./build/clineBD clineBD.c ./modules/gui/gui.c ./modules/gui/utils.c $LIBS
